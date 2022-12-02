@@ -1,7 +1,9 @@
 # PromptPayQRCodeGenerate
 
 An easy way to generate Prompt-pay QR Code from prompt-pay id.
+
 PromptPayQRCodeGenerate have package "qr_flutter: ^4.0.0" inside.
+
 This version only support prompt-pay in thailand and currency in Thai Baht.
 
 [![Pub](https://img.shields.io/pub/v/promptpay_qrcode_generate.svg)](https://pub.dartlang.org/packages/promptpay_qrcode_generate)

@@ -6,11 +6,28 @@ import 'package:promptpay_qrcode_generate/src/generate_qrcode.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class QRCodeGenerate extends StatelessWidget {
+  /// Required [promptPayId] use to generate prompt-pay qr code.
   final String promptPayId;
-  final double amount, width, height;
+
+  /// The optional [amount] double default to 0 use to generate prompt-pay qr code.
+  final double amount;
+
+  /// The optional [width] double default to double.infinity for display scale image.
+  final double width;
+
+  /// The optional [height] double default to 400 for display scale image.
+  final double height;
+
+  /// The optional [isShowAccountDetail] boolean defaults to true display Prompt-pay Account Detail.
   final bool isShowAccountDetail;
+
+  /// The optional [promptPayDetailCustom] Create new Widget to display Prompt-pay Account Detail.
   final Widget? promptPayDetailCustom;
+
+  /// The optional [isShowAmountDetail] boolean defaults to true display amount Detail.
   final bool isShowAmountDetail;
+
+  /// The optional [promptPayDetailCustom] Create new Widget to display amount Detail.
   final Widget? amountDetailCustom;
 
   const QRCodeGenerate({
@@ -27,7 +44,8 @@ class QRCodeGenerate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String qrCodeGenerate = generateQRCode(promptPayID: promptPayId, amount: amount);
+    String qrCodeGenerate =
+        generateQRCode(promptPayID: promptPayId, amount: amount);
 
     return Container(
       color: Colors.white,
@@ -69,9 +87,13 @@ class QRCodeGenerate extends StatelessWidget {
                   ),
           ),
           if (isShowAccountDetail)
-            promptPayDetailCustom == null ? Text("Account ($promptPayId)") : promptPayDetailCustom!,
+            promptPayDetailCustom == null
+                ? Text("Account ($promptPayId)")
+                : promptPayDetailCustom!,
           if (isShowAmountDetail)
-            amountDetailCustom == null ? Text("Amount ${formatAmount(amount.toStringAsFixed(2))} Baht") : amountDetailCustom!,
+            amountDetailCustom == null
+                ? Text("Amount ${formatAmount(amount.toStringAsFixed(2))} Baht")
+                : amountDetailCustom!,
           const SizedBox(
             height: 5,
           )
