@@ -17,6 +17,7 @@ void main(){
                     width: 400,
                     height: 400,
                   )));
+          await tester.pumpWidget(testWidget);
 
         });
   });
