@@ -9,6 +9,9 @@ This version only support prompt-pay in thailand and currency in Thai Baht.
 [![Pub](https://img.shields.io/pub/v/promptpay_qrcode_generate.svg)](https://pub.dartlang.org/packages/promptpay_qrcode_generate)
 [![Tests](https://github.com/SEMAJdev/promptpay_qrcode_generate/actions/workflows/dart.yml/badge.svg)](https://github.com/SEMAJdev/promptpay_qrcode_generate/actions/workflows/dart.yml)
 
+[![license](https://img.shields.io/github/license/SEMAJdev/promptpay_qrcode_generate)](https://github.com/SEMAJdev/promptpay_qrcode_generate/blob/main/LICENSE)
+
+
 ![Prompt-pay QR Code Generate Demo](https://github.com/SEMAJdev/promptpay_qrcode_generate/blob/main/demo_images/demo_promptpay_qrcode_generate.png?raw=true "Prompt-pay QR Code Generate Demo")
 
 ## Features
