@@ -1,6 +1,6 @@
 name: promptpay_qrcode_generate
 description: Promptpay QR Code Generate An easy way to generate Prompt-pay QR Code from prompt-pay id
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/SEMAJdev/promptpay_qrcode_generate
 
 environment:
