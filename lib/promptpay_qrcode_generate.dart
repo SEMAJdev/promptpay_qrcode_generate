@@ -78,7 +78,7 @@ class QRCodeGenerate extends StatelessWidget {
           Expanded(
             flex: 4,
             child: qrCodeGenerate.isNotEmpty
-                ? QrImage(
+                ? QrImageView(
                     data: qrCodeGenerate,
                   )
                 : const Align(
